@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire a Swimmer - HireSwimmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>HireSwimmer</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HireSwimmer.html">Our Swimmers</a></li>
+                <li><a href="Prices.html">Prices</a></li>
+                <li><a href="Hire.html">Hire Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hire-page">
+        <section class="hire-form-section">
+            <div class="container">
+                <h2>Hire Your Perfect Swimmer</h2>
+                <p>Please fill out the form below with details about your project and your swimmer preferences. We'll get back to you within 24 hours to confirm details and provide a precise quote.</p>
+
+                <form class="hire-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="fullName">Your Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number (Optional):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Type of Project/Event:</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="">-- Select Type --</option>
+                            <option value="film-media">Film/Media Production</option>
+                            <option value="event-entertainment">Event Entertainment</option>
+                            <option value="competitive-support">Competitive Support</option>
+                            <option value="safety-support">Safety/Support</option>
+                            <option value="other">Other (Please specify in notes)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredSwimmer">Preferred Swimmer (Optional):</label>
+                        <select id="preferredSwimmer" name="preferredSwimmer">
+                            <option value="">-- No Preference --</option>
+                            <optgroup label="Advanced Swimmers">
+                                <option value="maya-l">Maya L.</option>
+                                <option value="alex-k">Alex K.</option>
+                                <option value="chloe-r">Chloe R.</option>
+                            </optgroup>
+                            <optgroup label="Intermediate Swimmers">
+                                <option value="ben-p">Ben P.</option>
+                                <option value="sarah-t">Sarah T.</option>
+                                <option value="liam-w">Liam W.</option>
+                            </optgroup>
+                            <optgroup label="Beginner Swimmers">
+                                <option value="olivia-d">Olivia D.</option>
+                                <option value="noah-f">Noah F.</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateRequired">Date(s) Swimmer is Required:</label>
+                        <input type="date" id="dateRequired" name="dateRequired" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Estimated Duration (Hours):</label>
+                        <input type="number" id="duration" name="duration" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location of Project/Event:</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Los Angeles, CA or Specific Venue Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Notes / Specific Requirements:</label>
+                        <textarea id="notes" name="notes" rows="6" placeholder="Describe the type of swimming needed, specific skills, water environment, desired attire, or any other important details."></textarea>
+                    </div>
+
+                    <button type="submit" class="button">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HireSwimmer. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Pre-fill swimmer selection if coming from HireSwimmer.html
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const swimmerParam = urlParams.get('swimmer');
+            if (swimmerParam) {
+                document.getElementById('preferredSwimmer').value = swimmerParam;
+            }
+        });
+    </script>
+</body>
+</html>
