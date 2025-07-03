@@ -22,8 +22,8 @@
     <main class="hire-page">
         <section class="hire-form-section">
             <div class="container">
-                <h2>Hire Your Perfect Swimmer</h2>
-                <p>Please fill out the form below with details about your project and your swimmer preferences. We'll get back to you within 24 hours to confirm details and provide a precise quote.</p>
+                <h2>Book Your Personal Lap Swimmer!</h2>
+                <p>Fill out the form below with details about your desired lap session. We'll confirm availability and provide a precise quote for your relaxation experience.</p>
 
                 <form class="hire-form" action="#" method="POST">
                     <div class="form-group">
@@ -42,56 +42,56 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="projectType">Type of Project/Event:</label>
+                        <label for="projectType">Purpose of Lap Session:</label>
                         <select id="projectType" name="projectType" required>
-                            <option value="">-- Select Type --</option>
-                            <option value="film-media">Film/Media Production</option>
-                            <option value="event-entertainment">Event Entertainment</option>
-                            <option value="competitive-support">Competitive Support</option>
-                            <option value="safety-support">Safety/Support</option>
+                            <option value="">-- Select Purpose --</option>
+                            <option value="relaxation">Pure Relaxation/Observation</option>
+                            <option value="entertainment">Event Entertainment/Guest Impression</option>
+                            <option value="recovery">Recovery/Rehabilitation Observation</option>
+                            <option value="motivation">Motivation by Proxy</option>
                             <option value="other">Other (Please specify in notes)</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="preferredSwimmer">Preferred Swimmer (Optional):</label>
+                        <label for="preferredSwimmer">Preferred Lap Performer (Optional):</label>
                         <select id="preferredSwimmer" name="preferredSwimmer">
                             <option value="">-- No Preference --</option>
-                            <optgroup label="Advanced Swimmers">
-                                <option value="maya-l">Maya L.</option>
-                                <option value="alex-k">Alex K.</option>
-                                <option value="chloe-r">Chloe R.</option>
+                            <optgroup label="Elite Lap Performers">
+                                <option value="maya-l">Maya L. (Effortless Glide)</option>
+                                <option value="alex-k">Alex K. (Power Lap)</option>
+                                <option value="chloe-r">Chloe R. (Rhythmic Repeater)</option>
                             </optgroup>
-                            <optgroup label="Intermediate Swimmers">
-                                <option value="ben-p">Ben P.</option>
-                                <option value="sarah-t">Sarah T.</option>
-                                <option value="liam-w">Liam W.</option>
+                            <optgroup label="Dedicated Lap Enthusiasts">
+                                <option value="ben-p">Ben P. (Friendly Lap-Doer)</option>
+                                <option value="sarah-t">Sarah T. (Versatile Viewer)</option>
+                                <option value="liam-w">Liam W. (Steady Eddy)</option>
                             </optgroup>
-                            <optgroup label="Beginner Swimmers">
-                                <option value="olivia-d">Olivia D.</option>
-                                <option value="noah-f">Noah F.</option>
+                            <optgroup label="Budget-Friendly Lap Movers">
+                                <option value="olivia-d">Olivia D. (Basic Mover)</option>
+                                <option value="noah-f">Noah F. (Straightforward Counter)</option>
                             </optgroup>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="dateRequired">Date(s) Swimmer is Required:</label>
+                        <label for="dateRequired">Date(s) for Lap Session:</label>
                         <input type="date" id="dateRequired" name="dateRequired" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="duration">Estimated Duration (Hours):</label>
+                        <label for="duration">Estimated Session Duration (Hours):</label>
                         <input type="number" id="duration" name="duration" min="1" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="location">Location of Project/Event:</label>
-                        <input type="text" id="location" name="location" placeholder="e.g., Los Angeles, CA or Specific Venue Name" required>
+                        <label for="location">Location of Pool:</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Your Home Pool, Community Center" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="notes">Additional Notes / Specific Requirements:</label>
-                        <textarea id="notes" name="notes" rows="6" placeholder="Describe the type of swimming needed, specific skills, water environment, desired attire, or any other important details."></textarea>
+                        <label for="notes">Additional Notes / Specific Lap Instructions:</label>
+                        <textarea id="notes" name="notes" rows="6" placeholder="Specify desired stroke style (if any), pace preference, number of laps to be performed, or any other details for your swimmer."></textarea>
                     </div>
 
                     <button type="submit" class="button">Submit Request</button>
